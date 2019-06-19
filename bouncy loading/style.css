@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #008080;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+
+.circle {
+    display: block;
+    margin: 0 4px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
+
+.a {
+    background-color: #ff0000;
+    animation-delay: 0s;
+}
+
+.b {
+    background-color: #ffff00;
+    animation-delay: 0.2s;
+}
+
+.c {
+    background-color: #0000ff;
+    animation-delay: 0.4s;
+}
+
+@keyframes animate {
+    0%, 20%, 80%, 100% {
+        margin-top: 0px;
+    }
+
+    50% {
+        margin-top: -15px;
+    }
+}
